@@ -1,0 +1,281 @@
+[
+  {
+    "ID": 1,
+    "Year": 2015,
+    "City": "Atlanta",
+    "State": "GA",
+    "CostIndex": 95.6,
+    "SoftEngineers": 96519,
+    "ProgAnalyst": 73222,
+    "SysAnalyst": 77797
+  },
+  {
+    "ID": 2,
+    "Year": 2015,
+    "City": "Austin",
+    "State": "TX",
+    "CostIndex": 98.5,
+    "SoftEngineers": 95362,
+    "ProgAnalyst": 72710,
+    "SysAnalyst": 62509
+  },
+  {
+    "ID": 3,
+    "Year": 2015,
+    "City": "Baltimore",
+    "State": "MD",
+    "CostIndex": 109.4,
+    "SoftEngineers": 87667,
+    "ProgAnalyst": 65380,
+    "SysAnalyst": 71396
+  },
+  {
+    "ID": 4,
+    "Year": 2015,
+    "City": "Boston",
+    "State": "MA",
+    "CostIndex": 111.6,
+    "SoftEngineers": 94717,
+    "ProgAnalyst": 69256,
+    "SysAnalyst": 72275
+  },
+  {
+    "ID": 5,
+    "Year": 2015,
+    "City": "Chicago",
+    "State": "IL",
+    "CostIndex": 106.6,
+    "SoftEngineers": 89027,
+    "ProgAnalyst": 72094,
+    "SysAnalyst": 67387
+  },
+  {
+    "ID": 6,
+    "Year": 2015,
+    "City": "Columbus",
+    "State": "OH",
+    "CostIndex": 93.8,
+    "SoftEngineers": 90618,
+    "ProgAnalyst": 81636,
+    "SysAnalyst": 74017
+  },
+  {
+    "ID": 7,
+    "Year": 2015,
+    "City": "Dallas",
+    "State": "TX",
+    "CostIndex": 101.0,
+    "SoftEngineers": 94417,
+    "ProgAnalyst": 74505,
+    "SysAnalyst": 75817
+  },
+  {
+    "ID": 8,
+    "Year": 2015,
+    "City": "Denver",
+    "State": "CO",
+    "CostIndex": 104.3,
+    "SoftEngineers": 97442,
+    "ProgAnalyst": 93783,
+    "SysAnalyst": 72893
+  },
+  {
+    "ID": 9,
+    "Year": 2015,
+    "City": "Detroit",
+    "State": "MI",
+    "CostIndex": 97.8,
+    "SoftEngineers": 86578,
+    "ProgAnalyst": 75435,
+    "SysAnalyst": 74530
+  },
+  {
+    "ID": 10,
+    "Year": 2015,
+    "City": "Houston",
+    "State": "TX",
+    "CostIndex": 100.7,
+    "SoftEngineers": 88450,
+    "ProgAnalyst": 73067,
+    "SysAnalyst": 61878
+  },
+  {
+    "ID": 11,
+    "Year": 2015,
+    "City": "Kansas City",
+    "State": "MO",
+    "CostIndex": 92.7,
+    "SoftEngineers": 79585,
+    "ProgAnalyst": 82163,
+    "SysAnalyst": 77923
+  },
+  {
+    "ID": 12,
+    "Year": 2015,
+    "City": "Los Angeles",
+    "State": "CA",
+    "CostIndex": 118.2,
+    "SoftEngineers": 90421,
+    "ProgAnalyst": 69914,
+    "SysAnalyst": 67948
+  },
+  {
+    "ID": 13,
+    "Year": 2015,
+    "City": "Miami",
+    "State": "FL",
+    "CostIndex": 105.0,
+    "SoftEngineers": 88487,
+    "ProgAnalyst": 71734,
+    "SysAnalyst": 64099
+  },
+  {
+    "ID": 14,
+    "Year": 2015,
+    "City": "Minneapolis",
+    "State": "MN",
+    "CostIndex": 103.0,
+    "SoftEngineers": 87998,
+    "ProgAnalyst": 69316,
+    "SysAnalyst": 64717
+  },
+  {
+    "ID": 15,
+    "Year": 2015,
+    "City": "New York",
+    "State": "NY",
+    "CostIndex": 122.2,
+    "SoftEngineers": 90543,
+    "ProgAnalyst": 70286,
+    "SysAnalyst": 66841
+  },
+  {
+    "ID": 16,
+    "Year": 2015,
+    "City": "Orlando",
+    "State": "FL",
+    "CostIndex": 98.0,
+    "SoftEngineers": 86735,
+    "ProgAnalyst": 74851,
+    "SysAnalyst": 63896
+  },
+  {
+    "ID": 17,
+    "Year": 2015,
+    "City": "Philadelphia",
+    "State": "PA",
+    "CostIndex": 109.0,
+    "SoftEngineers": 87030,
+    "ProgAnalyst": 71828,
+    "SysAnalyst": 70252
+  },
+  {
+    "ID": 18,
+    "Year": 2015,
+    "City": "Phoenix",
+    "State": "AZ",
+    "CostIndex": 99.7,
+    "SoftEngineers": 93649,
+    "ProgAnalyst": 77056,
+    "SysAnalyst": 70729
+  },
+  {
+    "ID": 19,
+    "Year": 2015,
+    "City": "Pittsburgh",
+    "State": "PA",
+    "CostIndex": 93.4,
+    "SoftEngineers": 92981,
+    "ProgAnalyst": 74116,
+    "SysAnalyst": 70752
+  },
+  {
+    "ID": 20,
+    "Year": 2015,
+    "City": "Portland",
+    "State": "OR",
+    "CostIndex": 100.5,
+    "SoftEngineers": 101592,
+    "ProgAnalyst": 72697,
+    "SysAnalyst": 70635
+  },
+  {
+    "ID": 21,
+    "Year": 2015,
+    "City": "Raleigh",
+    "State": "NC",
+    "CostIndex": 95.2,
+    "SoftEngineers": 102950,
+    "ProgAnalyst": 87131,
+    "SysAnalyst": 71758
+  },
+  {
+    "ID": 22,
+    "Year": 2015,
+    "City": "San Diego",
+    "State": "CA",
+    "CostIndex": 119.0,
+    "SoftEngineers": 90739,
+    "ProgAnalyst": 64813,
+    "SysAnalyst": 62511
+  },
+  {
+    "ID": 23,
+    "Year": 2015,
+    "City": "San Francisco",
+    "State": "CA",
+    "CostIndex": 121.3,
+    "SoftEngineers": 101006,
+    "ProgAnalyst": 78439,
+    "SysAnalyst": 81162
+  },
+  {
+    "ID": 24,
+    "Year": 2015,
+    "City": "San Jose",
+    "State": "CA",
+    "CostIndex": 122.0,
+    "SoftEngineers": 107121,
+    "ProgAnalyst": 73367,
+    "SysAnalyst": 84530
+  },
+  {
+    "ID": 25,
+    "Year": 2015,
+    "City": "Seattle",
+    "State": "WA",
+    "CostIndex": 107.0,
+    "SoftEngineers": 107540,
+    "ProgAnalyst": 79945,
+    "SysAnalyst": 72639
+  },
+  {
+    "ID": 26,
+    "Year": 2015,
+    "City": "St. Louis",
+    "State": "MO",
+    "CostIndex": 88.9,
+    "SoftEngineers": 97621,
+    "ProgAnalyst": 83585,
+    "SysAnalyst": 80271
+  },
+  {
+    "ID": 27,
+    "Year": 2015,
+    "City": "Tampa",
+    "State": "FL",
+    "CostIndex": 99.4,
+    "SoftEngineers": 88658,
+    "ProgAnalyst": 77594,
+    "SysAnalyst": 63684
+  },
+  {
+    "ID": 28,
+    "Year": 2015,
+    "City": "Washington D.C.",
+    "State": "DC",
+    "CostIndex": 120.4,
+    "SoftEngineers": 84801,
+    "ProgAnalyst": 71779,
+    "SysAnalyst": 67841
+  }]
