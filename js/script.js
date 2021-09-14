@@ -3,142 +3,139 @@
 window.addEventListener('load', initialize);
 
 // Globale variabelen
-let txtIngave, divFeedback, boodschappenLijst, aantalProducten;
-let divArrayFuncties;
-let divArrayFuncties2;
+let inpInput, divFeedback,errandList, numberOfProducts;
+let divArrayFunctions;
+let divArrayFunctions2;
 let divMulti;
-let txtVoornaam, txtNaam, txtGemeente;
-let adressen;
-let divDataWeergave;
+let inpFirstname, inpName, inpMunicipality;
+let adresses;
+let divDataDisplay;
 
 function initialize() {
   // Lokale variabelen
   let btnArrayResult;
-  let btnMultiVoegToe;
+  let btnMultiAdd;
 
   // DOM elementen ophalen
-  txtIngave = document.getElementById('ingave');
-  txtVoornaam = document.getElementById('voornaam');
-  txtNaam = document.getElementById('naam');
-  txtGemeente = document.getElementById('gemeente');
+  inpInput = document.getElementById('ingave');
+  inpFirstname = document.getElementById('firstname');
+  inpName = document.getElementById('name');
+  inpMunicipality = document.getElementById('municipality');
   divFeedback = document.getElementById('feedback');
-  divArrayFuncties = document.getElementById('array-functies');
-  divArrayFuncties2 = document.getElementById('array-functies2');
+  divArrayFunctions = document.getElementById('array-functions');
+  divArrayFunctions2 = document.getElementById('array-functions2');
   divMulti = document.getElementById('multi');
-  divDataWeergave = document.getElementById('data-weergave');
+  divDataDisplay = document.getElementById('data-display');
   btnArrayResult = document.querySelector("#array-result");
-  btnMultiVoegToe = document.querySelector('#multi-voegToe')
+  btnMultiAdd = document.querySelector('#multi-add')
 
   // Eventlisteners toevoegen
-  btnArrayResult.addEventListener("click", voegProductToeAanArray);
-  btnMultiVoegToe.addEventListener('click', voegAdresToe)
+  btnArrayResult.addEventListener("click", addProductToArray);
+  btnMultiAdd.addEventListener('click', addAdress)
 
   // Initialisatie van de variabelen
-  aantalProducten = 0;
-  boodschappenLijst = [];
+  numberOfProducts = 0; errandList = [];
 
-  // Functies aanroepen
-  vulArrayFuncties();
-  vulArrayFuncties2();
-  vulAdressen();
-  toonAdressen();
-  vulMetData();
+  // Functions aanroepen
+  fillArrayFunctions();
+  fillArrayFunctions2();
+  fillAdresses();
+  showAdresses();
+  fillWithData();
 }
 
-function Compare(a, b, SorteerElement) {
-  if (a[SorteerElement] < b[SorteerElement]) {
+function Compare(a, b, sortElement) {
+  if (a[sortElement] < b[sortElement]) {
     return -1;
   }
-  if (a[SorteerElement] > b[SorteerElement]) {
+  if (a[sortElement] > b[sortElement]) {
     return 1;
   }
   return 0;
 }
 
-function vulMetData() {
+function fillWithData() {
   dataSitcom.sort((a, b, c) => Compare(a, b, 'Rank'));
   for(let dataObject in dataSitcom) {
-    divDataWeergave.appendChild(MaakDataDivisie(dataSitcom[dataObject]));
+    divDataDisplay.appendChild(makeDataDivision(dataSitcom[dataObject]));
   }
 }
 
-function MaakDataDivisie(objectElement) {
-  let DataDivisie = document.createElement('div');
-  DataDivisie.className='dataDiv';
-  DataDivisie.innerHTML = `Rank : ${objectElement.Rank} <br/> 
+function makeDataDivision(objectElement) {
+  const dataDivision = document.createElement('div');
+  dataDivision.className='dataDiv';
+  dataDivision.innerHTML = `Rank : ${objectElement.Rank} <br/> 
                           SitcomName : ${objectElement.SitcomName}  <br />
                           Years : ${objectElement.Years}`; 
 
-  return DataDivisie;
-
-
+  return dataDivision;
 }
 
-function vulAdressen() {
-  adressen = [];
-  adressen[0] = ["De Donder", "Walter", "Affligem"];
-  adressen[1] = ["Crucke", "Koen", "Gent"];
-  adressen[2] = ["Verhulst", "Gert", "Antwerpen"];
+function fillAdresses() {
+  adresses = [];
+  adresses[0] = ["De Donder", "Walter", "Affligem"];
+  adresses[1] = ["Crucke", "Koen", "Gent"];
+  adresses[2] = ["Verhulst", "Gert", "Antwerpen"];
 }
 
-function toonAdressen()
+function showAdresses()
 {
-  let samenvatting = "";
+  let summary = "";
  
-  for (let gegeven in adressen) {
-      samenvatting += `${adressen[gegeven][1]} ${adressen[gegeven][0]} - ${adressen[gegeven][2]}<br />` ;      
+  for (let adress in adresses) {
+      summary += `${adresses[adress][1]} ${adresses[adress][0]} - ${adresses[adress][2]}<br />` ;      
   }
-  divMulti.innerHTML = samenvatting;
+  divMulti.innerHTML = summary;
 }
 
-function voegAdresToe() {
-  let voornaam = txtVoornaam.value;
-  let naam = txtNaam.value;
-  let gemeente = txtGemeente.value;
-  let nieuwAdres = [naam, voornaam, gemeente];
-  adressen.push(nieuwAdres);
-  toonAdressen();
-  txtVoornaam.value = "";
-  txtNaam.value = "";
-  txtGemeente.value = "";  
+function addAdress() {
+  let firstname = inpFirstname.value;
+  let name = inpName.value;
+  let municipality = inpMunicipality.value;
+  let newAdress = [name, firstname, municipality];
+  adresses.push(newAdress);
+  showAdresses();
+  fillWithData.value = "";
+  inpName.value = "";
+  inpMunicipality.value = "";  
 }
 
-// Arrow functies in variabelen
-let ZoekEven = p => p%2 == 0;
-let Verdubbel = p => p * 2;
+// Arrow Functions in variabelen
+let findEven = p => p%2 == 0;
+let double = p => p * 2;
 
-function vulArrayFuncties2() {
-    let leeftijdArray = [15,31,17,19,52,51];
-    let verdubbelLeeftijdArray;
+function fillArrayFunctions2() {
+    let ageArray = [15,31,17,19,52,51];
+    let doubleAgeArray;
     let result = '';
 
-    verdubbelLeeftijdArray = leeftijdArray.map(Verdubbel);
-    result = `  leeftijdArray => ${leeftijdArray}  <br /> 
-                leeftijdArray.every(p => p>=18) => ${leeftijdArray.every(p => (p >= 18))} <br />
-                leeftijdArray.filter(ZoekEven) => ${leeftijdArray.filter(ZoekEven)} <br />
-                leeftijdArray.find(p=> p>=18) => ${leeftijdArray.find(p=> p >= 18)} <br />
-                leeftijdArray.findIndex(p => p>=18) => ${leeftijdArray.findIndex(p=> p >= 18)} <br/>
-                leeftijdArray.indexOf(19) => ${leeftijdArray.indexOf(19)} <br/>
-                leeftijdArray.includes(18) => ${leeftijdArray.includes(18)} <br/>
-                leeftijdArray.some(p => p<18) => ${leeftijdArray.some(p => p < 18)} <br/>
-                verdubbelLeeftijdArray = leeftijdArray.map(Verdubbel) => ${verdubbelLeeftijdArray} <br />
-                leeftijdsArray.reduce ((a,b) => (a+b),0) => ${leeftijdArray.reduce((a, b) => (a + b), 0)} <br />
+    doubleAgeArray = ageArray.map(double);
+    result = `  ageArray => ${ageArray}  <br /> 
+                ageArray.every(p => p>=18) => ${ageArray.every(p => (p >= 18))} <br />
+                ageArray.filter(findEven) => ${ageArray.filter(findEven)} <br />
+                ageArray.find(p=> p>=18) => ${ageArray.find(p=> p >= 18)} <br />
+                ageArray.findIndex(p => p>=18) => ${ageArray.findIndex(p=> p >= 18)} <br/>
+                ageArray.indexOf(19) => ${ageArray.indexOf(19)} <br/>
+                ageArray.includes(18) => ${ageArray.includes(18)} <br/>
+                ageArray.some(p => p<18) => ${ageArray.some(p => p < 18)} <br/>
+                doubleAgeArray = ageArray.map(double) => ${doubleAgeArray} <br />
+                ageArray.reduce ((a,b) => (a+b),0) => ${ageArray.reduce((a, b) => (a + b), 0)} <br />
     `;
 
-    divArrayFuncties2.innerHTML = result;
+    divArrayFunctions2.innerHTML = result;
 
 }
 
-function vulArrayFuncties() {
-  // Locale variabelen
+function fillArrayFunctions() {
+  // local vars
   let fruitArray = ['Appel', 'Peer', 'Banaan', 'Kiwi','Meloen','Druif'];
-  let groentenArray = ['Wortel', 'Sla', 'Tomaat','Komkommer'];
+  let veggieArray = ['Wortel', 'Sla', 'Tomaat','Komkommer'];
   let result = '<h3> Overzicht Funties </h3>';
 
   result += ` fruitArray.join() => ${fruitArray.join()} <br />
-              groentenArray.join(-) => ${groentenArray.join('-')} <br />
+              veggieArray.join(-) => ${veggieArray.join('-')} <br />
               fruitArray => ${fruitArray} <br />
-              groentenArray.concat(fruitArray) => ${groentenArray.concat(fruitArray)} <br />
+              veggieArray.concat(fruitArray) => ${veggieArray.concat(fruitArray)} <br />
               fruitArray.reverse() => ${fruitArray.reverse()} <br />
               fruitArray.sort() => ${fruitArray.sort()} <br />
               fruitArray.splice(1,2) => ${fruitArray.splice(1, 2)} <br />
@@ -149,36 +146,36 @@ function vulArrayFuncties() {
               fruitArray na push => ${fruitArray} <br />
 
               `;
-  divArrayFuncties.innerHTML = result; 
+  divArrayFunctions.innerHTML = result; 
 }
 
-function voegProductToeAanArray() {
-  let toeTeVoegenProduct = txtIngave.value;
+function addProductToArray() {
+  let productToAdd = inpInput.value;
 
-  if (toeTeVoegenProduct.trim() != '') {
-    boodschappenLijst[aantalProducten] = toeTeVoegenProduct;
+  if (productToAdd.trim() != '') {
+[errandList, aantalProducten] = productToAdd;
     aantalProducten++;
-    txtIngave.value = '';
-    GeefFeedBack();
+    inpInput.value = '';
+    giveFeedback();
   }
   else {
-    console.warn('Geen waarde ingegeven');
+    console.warn('Geen waarde in adress');
   }
 }
 
-function GeefFeedBack() {
+function giveFeedback() {
   let result = '<h3> Array Elementen </h3>';
   // Lussen met een for-lus
   result += '<u>For-lus</u> <br />'; 
-  for (let i = 0; i < boodschappenLijst.length; i++) {
-    result += `${boodschappenLijst[i]} <br />`;
+  for (let i = 0; i <= errandList.length; i++) {
+    result += `[errandList, i]} <br />`;
   }
   // Lussen met een for-in-lus
   result += '<u>For-in-lus</u> <br />';
-  for(let product in boodschappenLijst) {
-    result += `${boodschappenLijst[product]} <br />`;
+  for(let i in errandList)  {
+    result += `${i[errandList, product]} <br />`;
   }
-  result += `Aantal elementen in de Array boodschappenlijst => ${boodschappenLijst.length}`;
+  result += `Aantal elementen in de Arra errandList, => .errandList, length}`;
   divFeedback.innerHTML = result;
 }
 
