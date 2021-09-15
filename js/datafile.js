@@ -1,667 +1,667 @@
-var dataSitcom = [
+const sitcomData = [
   {
-    "ID": 1,
-    "Rank": 70,
-    "SitcomName": "3rd Rock from the Sun",
-    "Years": "1996-2001"
+    id: 1,
+    rank: 70,
+    sitcomName: "3rd Rock from the Sun",
+    years: "1996-2001"
   },
   {
-    "ID": 2,
-    "Rank": 53,
-    "SitcomName": "ALF",
-    "Years": "1986-1990"
+    id: 2,
+    rank: 53,
+    sitcomName: "ALF",
+    years: "1986-1990"
   },
   {
-    "ID": 3,
-    "Rank": 5,
-    "SitcomName": "All In The Family",
-    "Years": "1971-1979"
+    id: 3,
+    rank: 5,
+    sitcomName: "All In The Family",
+    years: "1971-1979"
   },
   {
-    "ID": 4,
-    "Rank": 13,
-    "SitcomName": "Arrested Development",
-    "Years": "2003-2006"
+    id: 4,
+    rank: 13,
+    sitcomName: "Arrested Development",
+    years: "2003-2006"
   },
   {
-    "ID": 5,
-    "Rank": 27,
-    "SitcomName": "Beavis and Butthead",
-    "Years": "1993-1997"
+    id: 5,
+    rank: 27,
+    sitcomName: "Beavis and Butthead",
+    years: "1993-1997"
   },
   {
-    "ID": 6,
-    "Rank": 99,
-    "SitcomName": "Becker",
-    "Years": "1998-2004"
+    id: 6,
+    rank: 99,
+    sitcomName: "Becker",
+    years: "1998-2004"
   },
   {
-    "ID": 7,
-    "Rank": 25,
-    "SitcomName": "Bewitched",
-    "Years": "1964-1972"
+    id: 7,
+    rank: 25,
+    sitcomName: "Bewitched",
+    years: "1964-1972"
   },
   {
-    "ID": 8,
-    "Rank": 85,
-    "SitcomName": "Bosom Buddies",
-    "Years": "1980-1982"
+    id: 8,
+    rank: 85,
+    sitcomName: "Bosom Buddies",
+    years: "1980-1982"
   },
   {
-    "ID": 9,
-    "Rank": 77,
-    "SitcomName": "Boy Meets World",
-    "Years": "1993-2000"
+    id: 9,
+    rank: 77,
+    sitcomName: "Boy Meets World",
+    years: "1993-2000"
   },
   {
-    "ID": 10,
-    "Rank": 109,
-    "SitcomName": "California Dreams",
-    "Years": "1992-1997"
+    id: 10,
+    rank: 109,
+    sitcomName: "California Dreams",
+    years: "1992-1997"
   },
   {
-    "ID": 11,
-    "Rank": 44,
-    "SitcomName": "Charles in Charge",
-    "Years": "1984-1985, 1987-1990"
+    id: 11,
+    rank: 44,
+    sitcomName: "Charles in Charge",
+    years: "1984-1985, 1987-1990"
   },
   {
-    "ID": 12,
-    "Rank": 7,
-    "SitcomName": "Cheers",
-    "Years": "1982-1993"
+    id: 12,
+    rank: 7,
+    sitcomName: "Cheers",
+    years: "1982-1993"
   },
   {
-    "ID": 13,
-    "Rank": 110,
-    "SitcomName": "Chico and the Man",
-    "Years": "1974-1978"
+    id: 13,
+    rank: 110,
+    sitcomName: "Chico and the Man",
+    years: "1974-1978"
   },
   {
-    "ID": 14,
-    "Rank": 59,
-    "SitcomName": "Coach",
-    "Years": "1989-1997"
+    id: 14,
+    rank: 59,
+    sitcomName: "Coach",
+    years: "1989-1997"
   },
   {
-    "ID": 15,
-    "Rank": 58,
-    "SitcomName": "Community",
-    "Years": "2009-Present"
+    id: 15,
+    rank: 58,
+    sitcomName: "Community",
+    years: "2009-Present"
   },
   {
-    "ID": 16,
-    "Rank": 24,
-    "SitcomName": "Curb Your Enthusiasm",
-    "Years": "2000-Present"
+    id: 16,
+    rank: 24,
+    sitcomName: "Curb Your Enthusiasm",
+    years: "2000-Present"
   },
   {
-    "ID": 17,
-    "Rank": 105,
-    "SitcomName": "Dennis the Menace",
-    "Years": "1959-1963"
+    id: 17,
+    rank: 105,
+    sitcomName: "Dennis the Menace",
+    years: "1959-1963"
   },
   {
-    "ID": 18,
-    "Rank": 26,
-    "SitcomName": "Diff'rent Strokes",
-    "Years": "1978-1986"
+    id: 18,
+    rank: 26,
+    sitcomName: "Diff'rent Strokes",
+    years: "1978-1986"
   },
   {
-    "ID": 19,
-    "Rank": 82,
-    "SitcomName": "Dinosaurs",
-    "Years": "1991-1994"
+    id: 19,
+    rank: 82,
+    sitcomName: "Dinosaurs",
+    years: "1991-1994"
   },
   {
-    "ID": 20,
-    "Rank": 19,
-    "SitcomName": "Everybody Loves Raymond",
-    "Years": "1996-2005"
+    id: 20,
+    rank: 19,
+    sitcomName: "Everybody Loves Raymond",
+    years: "1996-2005"
   },
   {
-    "ID": 21,
-    "Rank": 104,
-    "SitcomName": "Family Affair",
-    "Years": "1966-1971"
+    id: 21,
+    rank: 104,
+    sitcomName: "Family Affair",
+    years: "1966-1971"
   },
   {
-    "ID": 22,
-    "Rank": 89,
-    "SitcomName": "Family Guy",
-    "Years": "1999-2001, 2004-Present"
+    id: 22,
+    rank: 89,
+    sitcomName: "Family Guy",
+    years: "1999-2001, 2004-Present"
   },
   {
-    "ID": 23,
-    "Rank": 61,
-    "SitcomName": "Family Matters",
-    "Years": "1989-1998"
+    id: 23,
+    rank: 61,
+    sitcomName: "Family Matters",
+    years: "1989-1998"
   },
   {
-    "ID": 24,
-    "Rank": 4,
-    "SitcomName": "Family Ties",
-    "Years": "1982-1989"
+    id: 24,
+    rank: 4,
+    sitcomName: "Family Ties",
+    years: "1982-1989"
   },
   {
-    "ID": 25,
-    "Rank": 11,
-    "SitcomName": "Frasier",
-    "Years": "1993-2004"
+    id: 25,
+    rank: 11,
+    sitcomName: "Frasier",
+    years: "1993-2004"
   },
   {
-    "ID": 26,
-    "Rank": 10,
-    "SitcomName": "Friends",
-    "Years": "1994-2004"
+    id: 26,
+    rank: 10,
+    sitcomName: "Friends",
+    years: "1994-2004"
   },
   {
-    "ID": 27,
-    "Rank": 21,
-    "SitcomName": "Full House",
-    "Years": "1987-1995"
+    id: 27,
+    rank: 21,
+    sitcomName: "Full House",
+    years: "1987-1995"
   },
   {
-    "ID": 28,
-    "Rank": 42,
-    "SitcomName": "Futurama",
-    "Years": "1999-2003, 2008-Present"
+    id: 28,
+    rank: 42,
+    sitcomName: "Futurama",
+    years: "1999-2003, 2008-Present"
   },
   {
-    "ID": 29,
-    "Rank": 95,
-    "SitcomName": "Get Smart",
-    "Years": "1965-1970"
+    id: 29,
+    rank: 95,
+    sitcomName: "Get Smart",
+    years: "1965-1970"
   },
   {
-    "ID": 30,
-    "Rank": 37,
-    "SitcomName": "Gilligan's Island",
-    "Years": "1964-1967"
+    id: 30,
+    rank: 37,
+    sitcomName: "Gilligan's Island",
+    years: "1964-1967"
   },
   {
-    "ID": 31,
-    "Rank": 62,
-    "SitcomName": "Gomer Pyle, U.S.M.C.",
-    "Years": "1964-1969"
+    id: 31,
+    rank: 62,
+    sitcomName: "Gomer Pyle, U.S.M.C.",
+    years: "1964-1969"
   },
   {
-    "ID": 32,
-    "Rank": 96,
-    "SitcomName": "Good Times",
-    "Years": "1974-1979"
+    id: 32,
+    rank: 96,
+    sitcomName: "Good Times",
+    years: "1974-1979"
   },
   {
-    "ID": 33,
-    "Rank": 81,
-    "SitcomName": "Green Acres",
-    "Years": "1965-1971"
+    id: 33,
+    rank: 81,
+    sitcomName: "Green Acres",
+    years: "1965-1971"
   },
   {
-    "ID": 34,
-    "Rank": 47,
-    "SitcomName": "Growing Pains",
-    "Years": "1985-1992"
+    id: 34,
+    rank: 47,
+    sitcomName: "Growing Pains",
+    years: "1985-1992"
   },
   {
-    "ID": 35,
-    "Rank": 83,
-    "SitcomName": "Hangin' with Mr. Cooper",
-    "Years": "1992-1997"
+    id: 35,
+    rank: 83,
+    sitcomName: "Hangin' with Mr. Cooper",
+    years: "1992-1997"
   },
   {
-    "ID": 36,
-    "Rank": 15,
-    "SitcomName": "Happy Days",
-    "Years": "1974-1984"
+    id: 36,
+    rank: 15,
+    sitcomName: "Happy Days",
+    years: "1974-1984"
   },
   {
-    "ID": 37,
-    "Rank": 103,
-    "SitcomName": "Here's Lucy",
-    "Years": "1968-1974"
+    id: 37,
+    rank: 103,
+    sitcomName: "Here's Lucy",
+    years: "1968-1974"
   },
   {
-    "ID": 38,
-    "Rank": 31,
-    "SitcomName": "Home Improvement",
-    "Years": "1991-1999"
+    id: 38,
+    rank: 31,
+    sitcomName: "Home Improvement",
+    years: "1991-1999"
   },
   {
-    "ID": 39,
-    "Rank": 30,
-    "SitcomName": "I Dream of Jeannie",
-    "Years": "1965-1970"
+    id: 39,
+    rank: 30,
+    sitcomName: "I Dream of Jeannie",
+    years: "1965-1970"
   },
   {
-    "ID": 40,
-    "Rank": 2,
-    "SitcomName": "I Love Lucy",
-    "Years": "1951-1957"
+    id: 40,
+    rank: 2,
+    sitcomName: "I Love Lucy",
+    years: "1951-1957"
   },
   {
-    "ID": 41,
-    "Rank": 94,
-    "SitcomName": "Laverne & Shirley",
-    "Years": "1976-1983"
+    id: 41,
+    rank: 94,
+    sitcomName: "Laverne & Shirley",
+    years: "1976-1983"
   },
   {
-    "ID": 42,
-    "Rank": 23,
-    "SitcomName": "Leave It To Beaver",
-    "Years": "1957-1963"
+    id: 42,
+    rank: 23,
+    sitcomName: "Leave It To Beaver",
+    years: "1957-1963"
   },
   {
-    "ID": 43,
-    "Rank": 6,
-    "SitcomName": "M*A*S*H",
-    "Years": "1972-1983"
+    id: 43,
+    rank: 6,
+    sitcomName: "M*A*S*H",
+    years: "1972-1983"
   },
   {
-    "ID": 44,
-    "Rank": 60,
-    "SitcomName": "Mad About You",
-    "Years": "1992-1999"
+    id: 44,
+    rank: 60,
+    sitcomName: "Mad About You",
+    years: "1992-1999"
   },
   {
-    "ID": 45,
-    "Rank": 91,
-    "SitcomName": "Make Room For Danny [The Danny Thomas Show]",
-    "Years": "1953-1964"
+    id: 45,
+    rank: 91,
+    sitcomName: "Make Room For Danny [The Danny Thomas Show]",
+    years: "1953-1964"
   },
   {
-    "ID": 46,
-    "Rank": 34,
-    "SitcomName": "Malcolm In the Middle",
-    "Years": "2000-2006"
+    id: 46,
+    rank: 34,
+    sitcomName: "Malcolm In the Middle",
+    years: "2000-2006"
   },
   {
-    "ID": 47,
-    "Rank": 57,
-    "SitcomName": "Mama's Family",
-    "Years": "1983-1985,1986-1990"
+    id: 47,
+    rank: 57,
+    sitcomName: "Mama's Family",
+    years: "1983-1985,1986-1990"
   },
   {
-    "ID": 48,
-    "Rank": 39,
-    "SitcomName": "Married With... Children",
-    "Years": "1987-1997"
+    id: 48,
+    rank: 39,
+    sitcomName: "Married With... Children",
+    years: "1987-1997"
   },
   {
-    "ID": 49,
-    "Rank": 20,
-    "SitcomName": "Mary Tyler Moore",
-    "Years": "1970-1977"
+    id: 49,
+    rank: 20,
+    sitcomName: "Mary Tyler Moore",
+    years: "1970-1977"
   },
   {
-    "ID": 50,
-    "Rank": 93,
-    "SitcomName": "Maude",
-    "Years": "1972-1978"
+    id: 50,
+    rank: 93,
+    sitcomName: "Maude",
+    years: "1972-1978"
   },
   {
-    "ID": 51,
-    "Rank": 80,
-    "SitcomName": "Mister Ed",
-    "Years": "1961-1966"
+    id: 51,
+    rank: 80,
+    sitcomName: "Mister Ed",
+    years: "1961-1966"
   },
   {
-    "ID": 52,
-    "Rank": 36,
-    "SitcomName": "Modern Family",
-    "Years": "2009-Present"
+    id: 52,
+    rank: 36,
+    sitcomName: "Modern Family",
+    years: "2009-Present"
   },
   {
-    "ID": 53,
-    "Rank": 46,
-    "SitcomName": "Mork and Mindy",
-    "Years": "1978-1982"
+    id: 53,
+    rank: 46,
+    sitcomName: "Mork and Mindy",
+    years: "1978-1982"
   },
   {
-    "ID": 54,
-    "Rank": 101,
-    "SitcomName": "Mr. Belvedere",
-    "Years": "1985-1990"
+    id: 54,
+    rank: 101,
+    sitcomName: "Mr. Belvedere",
+    years: "1985-1990"
   },
   {
-    "ID": 55,
-    "Rank": 29,
-    "SitcomName": "Murphy Brown",
-    "Years": "1988-1998"
+    id: 55,
+    rank: 29,
+    sitcomName: "Murphy Brown",
+    years: "1988-1998"
   },
   {
-    "ID": 56,
-    "Rank": 100,
-    "SitcomName": "My Favorite Martian",
-    "Years": "1963-1966"
+    id: 56,
+    rank: 100,
+    sitcomName: "My Favorite Martian",
+    years: "1963-1966"
   },
   {
-    "ID": 57,
-    "Rank": 78,
-    "SitcomName": "My Three Sons",
-    "Years": "1960-1972"
+    id: 57,
+    rank: 78,
+    sitcomName: "My Three Sons",
+    years: "1960-1972"
   },
   {
-    "ID": 58,
-    "Rank": 51,
-    "SitcomName": "Newhart",
-    "Years": "1982-1990"
+    id: 58,
+    rank: 51,
+    sitcomName: "Newhart",
+    years: "1982-1990"
   },
   {
-    "ID": 59,
-    "Rank": 28,
-    "SitcomName": "News Radio",
-    "Years": "1995-1999"
+    id: 59,
+    rank: 28,
+    sitcomName: "News Radio",
+    years: "1995-1999"
   },
   {
-    "ID": 60,
-    "Rank": 50,
-    "SitcomName": "Night Court",
-    "Years": "1984-1992"
+    id: 60,
+    rank: 50,
+    sitcomName: "Night Court",
+    years: "1984-1992"
   },
   {
-    "ID": 61,
-    "Rank": 65,
-    "SitcomName": "Perfect Strangers",
-    "Years": "1986-1992"
+    id: 61,
+    rank: 65,
+    sitcomName: "Perfect Strangers",
+    years: "1986-1992"
   },
   {
-    "ID": 62,
-    "Rank": 92,
-    "SitcomName": "Petticoat Junction",
-    "Years": "1963-1970"
+    id: 62,
+    rank: 92,
+    sitcomName: "Petticoat Junction",
+    years: "1963-1970"
   },
   {
-    "ID": 63,
-    "Rank": 87,
-    "SitcomName": "Punky Brewster",
-    "Years": "1984-1986"
+    id: 63,
+    rank: 87,
+    sitcomName: "Punky Brewster",
+    years: "1984-1986"
   },
   {
-    "ID": 64,
-    "Rank": 107,
-    "SitcomName": "Rhoda",
-    "Years": "1974-1978"
+    id: 64,
+    rank: 107,
+    sitcomName: "Rhoda",
+    years: "1974-1978"
   },
   {
-    "ID": 65,
-    "Rank": 22,
-    "SitcomName": "Roseanne",
-    "Years": "1988-1998"
+    id: 65,
+    rank: 22,
+    sitcomName: "Roseanne",
+    years: "1988-1998"
   },
   {
-    "ID": 66,
-    "Rank": 84,
-    "SitcomName": "Sabrina, the Teenage Witch",
-    "Years": "1996-2003"
+    id: 66,
+    rank: 84,
+    sitcomName: "Sabrina, the Teenage Witch",
+    years: "1996-2003"
   },
   {
-    "ID": 67,
-    "Rank": 40,
-    "SitcomName": "Sanford and Son",
-    "Years": "1972-1977"
+    id: 67,
+    rank: 40,
+    sitcomName: "Sanford and Son",
+    years: "1972-1977"
   },
   {
-    "ID": 68,
-    "Rank": 71,
-    "SitcomName": "Saved By The Bell",
-    "Years": "1990-1993"
+    id: 68,
+    rank: 71,
+    sitcomName: "Saved By The Bell",
+    years: "1990-1993"
   },
   {
-    "ID": 69,
-    "Rank": 1,
-    "SitcomName": "Seinfeld",
-    "Years": "1989-1998"
+    id: 69,
+    rank: 1,
+    sitcomName: "Seinfeld",
+    years: "1989-1998"
   },
   {
-    "ID": 70,
-    "Rank": 88,
-    "SitcomName": "Silver Spoons",
-    "Years": "1982-1986"
+    id: 70,
+    rank: 88,
+    sitcomName: "Silver Spoons",
+    years: "1982-1986"
   },
   {
-    "ID": 71,
-    "Rank": 97,
-    "SitcomName": "Soap",
-    "Years": "1977-1981"
+    id: 71,
+    rank: 97,
+    sitcomName: "Soap",
+    years: "1977-1981"
   },
   {
-    "ID": 72,
-    "Rank": 32,
-    "SitcomName": "South Park",
-    "Years": "1997-Present"
+    id: 72,
+    rank: 32,
+    sitcomName: "South Park",
+    years: "1997-Present"
   },
   {
-    "ID": 73,
-    "Rank": 12,
-    "SitcomName": "Taxi",
-    "Years": "1978-1982"
+    id: 73,
+    rank: 12,
+    sitcomName: "Taxi",
+    years: "1978-1982"
   },
   {
-    "ID": 74,
-    "Rank": 33,
-    "SitcomName": "That 70's Show",
-    "Years": "1998-2006"
+    id: 74,
+    rank: 33,
+    sitcomName: "That 70's Show",
+    years: "1998-2006"
   },
   {
-    "ID": 75,
-    "Rank": 108,
-    "SitcomName": "That Girl",
-    "Years": "1966-1971"
+    id: 75,
+    rank: 108,
+    sitcomName: "That Girl",
+    years: "1966-1971"
   },
   {
-    "ID": 76,
-    "Rank": 79,
-    "SitcomName": "The Addams Family",
-    "Years": "1964-1966"
+    id: 76,
+    rank: 79,
+    sitcomName: "The Addams Family",
+    years: "1964-1966"
   },
   {
-    "ID": 77,
-    "Rank": 69,
-    "SitcomName": "The Adventures of Ozzie & Harriet",
-    "Years": "1952-1966"
+    id: 77,
+    rank: 69,
+    sitcomName: "The Adventures of Ozzie & Harriet",
+    years: "1952-1966"
   },
   {
-    "ID": 78,
-    "Rank": 18,
-    "SitcomName": "The Andy Griffith Show",
-    "Years": "1960-1968"
+    id: 78,
+    rank: 18,
+    sitcomName: "The Andy Griffith Show",
+    years: "1960-1968"
   },
   {
-    "ID": 79,
-    "Rank": 43,
-    "SitcomName": "The Beverly Hillbillies",
-    "Years": "1962-1971"
+    id: 79,
+    rank: 43,
+    sitcomName: "The Beverly Hillbillies",
+    years: "1962-1971"
   },
   {
-    "ID": 80,
-    "Rank": 68,
-    "SitcomName": "The Big Bang Theory",
-    "Years": "2007-Present"
+    id: 80,
+    rank: 68,
+    sitcomName: "The Big Bang Theory",
+    years: "2007-Present"
   },
   {
-    "ID": 81,
-    "Rank": 35,
-    "SitcomName": "The Bob Newhart Show",
-    "Years": "1972-1978"
+    id: 81,
+    rank: 35,
+    sitcomName: "The Bob Newhart Show",
+    years: "1972-1978"
   },
   {
-    "ID": 82,
-    "Rank": 14,
-    "SitcomName": "The Brady Bunch",
-    "Years": "1969-1974"
+    id: 82,
+    rank: 14,
+    sitcomName: "The Brady Bunch",
+    years: "1969-1974"
   },
   {
-    "ID": 83,
-    "Rank": 8,
-    "SitcomName": "The Cosby Show",
-    "Years": "1984-1992"
+    id: 83,
+    rank: 8,
+    sitcomName: "The Cosby Show",
+    years: "1984-1992"
   },
   {
-    "ID": 84,
-    "Rank": 67,
-    "SitcomName": "The Dick Van Dyke Show",
-    "Years": "1961-1966"
+    id: 84,
+    rank: 67,
+    sitcomName: "The Dick Van Dyke Show",
+    years: "1961-1966"
   },
   {
-    "ID": 85,
-    "Rank": 102,
-    "SitcomName": "The Donna Reed Show",
-    "Years": "1958-1966"
+    id: 85,
+    rank: 102,
+    sitcomName: "The Donna Reed Show",
+    years: "1958-1966"
   },
   {
-    "ID": 86,
-    "Rank": 9,
-    "SitcomName": "The Facts of Life",
-    "Years": "1979-1988"
+    id: 86,
+    rank: 9,
+    sitcomName: "The Facts of Life",
+    years: "1979-1988"
   },
   {
-    "ID": 87,
-    "Rank": 48,
-    "SitcomName": "The Flintstones",
-    "Years": "1960-1966"
+    id: 87,
+    rank: 48,
+    sitcomName: "The Flintstones",
+    years: "1960-1966"
   },
   {
-    "ID": 88,
-    "Rank": 49,
-    "SitcomName": "The Fresh Prince of Bel-Air",
-    "Years": "1990-1996"
+    id: 88,
+    rank: 49,
+    sitcomName: "The Fresh Prince of Bel-Air",
+    years: "1990-1996"
   },
   {
-    "ID": 89,
-    "Rank": 52,
-    "SitcomName": "The Golden Girls",
-    "Years": "1985-1992"
+    id: 89,
+    rank: 52,
+    sitcomName: "The Golden Girls",
+    years: "1985-1992"
   },
   {
-    "ID": 90,
-    "Rank": 64,
-    "SitcomName": "The Honeymooners",
-    "Years": "1955-1956"
+    id: 90,
+    rank: 64,
+    sitcomName: "The Honeymooners",
+    years: "1955-1956"
   },
   {
-    "ID": 91,
-    "Rank": 63,
-    "SitcomName": "The Jeffersons",
-    "Years": "1975-1985"
+    id: 91,
+    rank: 63,
+    sitcomName: "The Jeffersons",
+    years: "1975-1985"
   },
   {
-    "ID": 92,
-    "Rank": 45,
-    "SitcomName": "The King of Queens",
-    "Years": "1998-2007"
+    id: 92,
+    rank: 45,
+    sitcomName: "The King of Queens",
+    years: "1998-2007"
   },
   {
-    "ID": 93,
-    "Rank": 16,
-    "SitcomName": "The King of the Hill",
-    "Years": "1996-2010"
+    id: 93,
+    rank: 16,
+    sitcomName: "The King of the Hill",
+    years: "1996-2010"
   },
   {
-    "ID": 94,
-    "Rank": 41,
-    "SitcomName": "The Love Boat",
-    "Years": "1977-1986"
+    id: 94,
+    rank: 41,
+    sitcomName: "The Love Boat",
+    years: "1977-1986"
   },
   {
-    "ID": 95,
-    "Rank": 90,
-    "SitcomName": "The Lucy Show",
-    "Years": "1962-1968"
+    id: 95,
+    rank: 90,
+    sitcomName: "The Lucy Show",
+    years: "1962-1968"
   },
   {
-    "ID": 96,
-    "Rank": 111,
-    "SitcomName": "The Many Loves of Dobie Gillis",
-    "Years": "1959-1963"
+    id: 96,
+    rank: 111,
+    sitcomName: "The Many Loves of Dobie Gillis",
+    years: "1959-1963"
   },
   {
-    "ID": 97,
-    "Rank": 106,
-    "SitcomName": "The Monkees",
-    "Years": "1966-1968"
+    id: 97,
+    rank: 106,
+    sitcomName: "The Monkees",
+    years: "1966-1968"
   },
   {
-    "ID": 98,
-    "Rank": 76,
-    "SitcomName": "The Munsters",
-    "Years": "1964-1966"
+    id: 98,
+    rank: 76,
+    sitcomName: "The Munsters",
+    years: "1964-1966"
   },
   {
-    "ID": 99,
-    "Rank": 66,
-    "SitcomName": "The Nanny",
-    "Years": "1993-1999"
+    id: 99,
+    rank: 66,
+    sitcomName: "The Nanny",
+    years: "1993-1999"
   },
   {
-    "ID": 100,
-    "Rank": 54,
-    "SitcomName": "The Odd Couple",
-    "Years": "1970-1975"
+    id: 100,
+    rank: 54,
+    sitcomName: "The Odd Couple",
+    years: "1970-1975"
   },
   {
-    "ID": 101,
-    "Rank": 38,
-    "SitcomName": "The Office",
-    "Years": "2005-Present"
+    id: 101,
+    rank: 38,
+    sitcomName: "The Office",
+    years: "2005-Present"
   },
   {
-    "ID": 102,
-    "Rank": 75,
-    "SitcomName": "The Partridge Family",
-    "Years": "1970-1974"
+    id: 102,
+    rank: 75,
+    sitcomName: "The Partridge Family",
+    years: "1970-1974"
   },
   {
-    "ID": 103,
-    "Rank": 3,
-    "SitcomName": "The Simpsons",
-    "Years": "1989-Present"
+    id: 103,
+    rank: 3,
+    sitcomName: "The Simpsons",
+    years: "1989-Present"
   },
   {
-    "ID": 104,
-    "Rank": 17,
-    "SitcomName": "Three's Company",
-    "Years": "1977-1984"
+    id: 104,
+    rank: 17,
+    sitcomName: "Three's Company",
+    years: "1977-1984"
   },
   {
-    "ID": 105,
-    "Rank": 86,
-    "SitcomName": "Two and a Half Men",
-    "Years": "2003-Present"
+    id: 105,
+    rank: 86,
+    sitcomName: "Two and a Half Men",
+    years: "2003-Present"
   },
   {
-    "ID": 106,
-    "Rank": 55,
-    "SitcomName": "Welcome Back, Kotter",
-    "Years": "1975-1979"
+    id: 106,
+    rank: 55,
+    sitcomName: "Welcome Back, Kotter",
+    years: "1975-1979"
   },
   {
-    "ID": 107,
-    "Rank": 73,
-    "SitcomName": "What's Happening!!",
-    "Years": "1976-1979, 1985-1988"
+    id: 107,
+    rank: 73,
+    sitcomName: "What's Happening!!",
+    years: "1976-1979, 1985-1988"
   },
   {
-    "ID": 108,
-    "Rank": 72,
-    "SitcomName": "Who's the Boss?",
-    "Years": "1984-1992"
+    id: 108,
+    rank: 72,
+    sitcomName: "Who's the Boss?",
+    years: "1984-1992"
   },
   {
-    "ID": 109,
-    "Rank": 98,
-    "SitcomName": "Will and Grace",
-    "Years": "1998-2006"
+    id: 109,
+    rank: 98,
+    sitcomName: "Will and Grace",
+    years: "1998-2006"
   },
   {
-    "ID": 110,
-    "Rank": 56,
-    "SitcomName": "Wings",
-    "Years": "1990-1997"
+    id: 110,
+    rank: 56,
+    sitcomName: "Wings",
+    years: "1990-1997"
   },
   {
-    "ID": 111,
-    "Rank": 74,
-    "SitcomName": "WKRP in Cincinnati",
-    "Years": "1978-1982"
+    id: 111,
+    rank: 74,
+    sitcomName: "WKRP in Cincinnati",
+    years: "1978-1982"
   }];
